@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Calculadora de Planos de Saúde e IMC</title>
+</head>
+
+<body>
+    <div class="header" id="header">
+        <div class="navegacao_header">
+            <a href="#">Home</a>
+            <a href="#">Contato</a>
+            <a href="#">Planos</a>
+            <a href="#">Sobre Nós</a>
+        </div>
+    </div>
+    <main class="main">
+        <section class="calc-imc">
+            <h1>Calculadora de Planos de Saúde e IMC</h1>
+            <form class="form" id="form">
+                <label for="kilos">
+                    Quilos
+                    <input name="kilos" id="kilos" placeholder="Peso atual" type="number" />
+                </label>
+                <label for="altura">
+                    Altura
+                    <input name="altura" id="altura" placeholder="Altura em centímetros" type="number" />
+                </label>
+                <button>Calcular</button>
+            </form>
+        </section>
+        <section class="result" id="result">
+            <!-- Aqui será exibido o resultado da comparação -->
+        </section>
+    </main>
+    <script src="javascript.js"></script>
+</body>
+
+</html>
