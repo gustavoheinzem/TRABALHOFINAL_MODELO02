@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de Planos de Saúde e IMC</title>
+
+
+</head>
+<body>
+<div class="header" id="header"> 
+    <div class="navegacao_header">
+        <a href="#">Home</a>
+        <a href="#">Contato</a>
+        <a href="#">Planos</a>
+        <a href="#">Sobre Nós</a>
+    </div>
+
+</div>
+<div class="container">
+    <h1 class="mt-4 mb-4">Calculadora de Planos de Saúde e IMC</h1>
+
+    <form id="healthCalculator">
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="age">Idade</label>
+                <input type="number" class="form-control" id="age" required>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="weight">Peso (kg)</label>
+                <input type="number" class="form-control" id="weight" required>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="height">Altura (cm)</label>
+                <input type="number" class="form-control" id="height" required>
+            </div>
+        </div>
+
+
+        <button type="button" class="btn btn-primary" onclick="comparePlans()">Comparar Planos</button>
+    </form>
+
+    <div id="result" class="mt-4"></div>
+</div>
+
+<script src="javascript.js"></script>
+</body>
+</html>
